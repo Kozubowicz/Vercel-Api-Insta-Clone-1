@@ -67,6 +67,6 @@ export default async function handler(req, res) {
     return res.status(200).json({ posts, pagesNumber });
   } catch (err) {
     console.error('Error in handler:', err);
-    return res.status(500).json({ error: 'Internal Server Error' });
+    return res.status(500).json({ error: 'Internal Server Error Occured' });
   }
 }
